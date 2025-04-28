@@ -1,4 +1,3 @@
-package tn.sesame.hotel_mnagament.services;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import tn.sesame.hotel_mnagament.entity.Booking;
@@ -29,11 +28,8 @@ public class BookingServicesImpl implements  IBookingServices {
     @Override
     public Booking updateBooking(Booking booking) {
         return bookingRepository.save(booking);
+
     }
 
-    @Override
-    public void deleteBooking(long id) {
-        bookingRepository.deleteById(id);
-    }
-
+   
 }
